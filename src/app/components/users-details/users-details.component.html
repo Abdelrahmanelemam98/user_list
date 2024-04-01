@@ -1,0 +1,19 @@
+<div class="d-block mt-5"></div>
+<div class="wrapper">
+  <div class="container">
+    <div class="row">
+      <h3>User Details</h3>
+    </div>
+  </div>
+</div>
+<div class="container mt-4">
+  <div class="row">
+    <p-card *ngIf="user" [style]="{ width: '360px' }">
+      <ng-template pTemplate="header">
+        <img alt="Card" [src]="user.avatar" />
+      </ng-template>
+      <h5>Name:{{ user.first_name }} {{ user.last_name }}</h5>
+      <h5>Email: {{ user.email }}</h5>
+    </p-card>
+  </div>
+</div>
